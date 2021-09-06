@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { ethers } from "ethers"
+import dotenv from "dotenv"
 import abi from "./utils/abi.json"
 import "./App.css"
 import Wave from "./components/Wave"
@@ -10,17 +11,14 @@ export default function MainScreen({currentAccount, setCurrentAccount, enteredAp
   const [message, setMessage] = useState("")
   const [waves, setWaves] = useState([])
   const [tx, setTx] = useState({state: '', happening: false})
+  dotenv.config()
 
   function handleChange(event) {
     setMessage(event.target.value)
   }
 
-  const PolygonAddress = "0x7a3A2f3E4eFEE14D221B5875c48008860d6604B1"
-  const EtheruemAddress = "0x05BBbe09E8C684ea1D177215c18D54fe65aa047f"
-
-
   const provider = new ethers.providers.Web3Provider(window.ethereum)
-  const contractAddress = EtheruemAddress
+  const contractAddress = process.env.REACT_APP_ETHEREUM_ADDRESS
   const signer = provider.getSigner()
   const waveportalContract = new ethers.Contract(contractAddress, abi.abi, signer)
 
