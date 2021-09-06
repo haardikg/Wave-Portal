@@ -1,0 +1,101 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+}
+
+.waveButton {
+  font-family: "Helvetica Neue";
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 220px;
+  border: 2px white solid;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+}
+
+div {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  background-color: transparent;
+}
+
+
+table, th, td {
+  border: 1px solid white;
+  padding: 0.5em;
+}
+
+.text {
+  font-size: 25px;
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+.motionContainer {
+  background-color: white;
+  height: 100vh;
+  width: 99.9.1vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+}
+
+.waveButton-Black{
+  font-family: "Helvetica Neue";
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 130px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+}
+
+textarea {
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  border: 2px white solid;
+  border-radius: 6px;
+  font-family: "Helvetica Neue";
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  height: 25px;
+}
